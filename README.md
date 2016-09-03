@@ -1,7 +1,7 @@
 # Apropal
 Apropal: free font from Warsaw
 
-[Warszawskie Kroje](http://http://kroje.org//).
+[Warszawskie Kroje](http://kroje.org/).
 
 
 WORK IN PROGRESS, 
