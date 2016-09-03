@@ -5,7 +5,7 @@ Apropal: free font from Warsaw
 
 
 WORK IN PROGRESS, 
-more informations soon
+Wait for more informations
 
 ![OpenType Features](images/OpenTypeFeatures.gif)
 =======
