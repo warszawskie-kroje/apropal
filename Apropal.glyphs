@@ -1,7 +1,16 @@
 {
-.appVersion = "927";
+.appVersion = "930";
 DisplayStrings = (
-"\U00DE"
+"\U00DE",
+"Rafa/lslash afoei",
+"/eogonek/aogonek/Aogonek/Eogonek \U00F3/Sacute/Cacute a",
+"/Zdotaccent z/zdotaccent/zdotaccent.ss01/zdotaccent.ss02",
+"1 698987886 44  48 49 ([{14}])",
+"What?!",
+"1234\U00A3",
+"rafal.buchner@gmail.comReggae",
+/Mdotaccent.alt/Mdotaccent,
+e/macroncomb/emacron
 );
 classes = (
 {
@@ -10,13 +19,14 @@ name = FSUB;
 },
 {
 automatic = 1;
-code = "A Aacute Acircumflex Adieresis Agrave Aogonek Aring Atilde AE B Bdotaccent C Cacute Ccaron Cdotaccent D Eth Dcaron Ddotaccent E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Eogonek F Fdotaccent G Gdotaccent H Hdotaccent I Iacute Icircumflex Idieresis Iogonek J K L Ldot Lslash M Mdotaccent N Nacute Ncaron Ntilde O Oacute Ocircumflex Odieresis Ograve Otilde P Pdotaccent Thorn Q R Rcaron S Sacute Scaron Sdotaccent T Tcaron Tdotaccent U Uacute Ucircumflex Udieresis Ugrave Umacron Uogonek V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+code = "A Aacute Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B Bdotaccent C Cacute Ccaron Cdotaccent D Eth Dcaron Ddotaccent E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F Fdotaccent G Gdotaccent H Hdotaccent I Iacute Icircumflex Idieresis Imacron Iogonek J K L Ldot Lslash M Mdotaccent N Nacute Ncaron Ntilde O Oacute Ocircumflex Odieresis Ograve Omacron Otilde P Pdotaccent Thorn Q R Rcaron S Sacute Scaron Sdotaccent T Tcaron Tdotaccent U Uacute Ucircumflex Udieresis Ugrave Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Mdotaccent.alt";
 name = Uppercase;
 }
 );
+copyright = "Copyright © 2016 by Rafał Buchner. All rights reserved.";
 date = "2016-05-07 12:34:20 +0000";
 designer = "Rafał Buchner";
-familyName = Apropal_TEST;
+familyName = Apropal;
 featurePrefixes = (
 {
 automatic = 1;
@@ -32,7 +42,7 @@ name = aalt;
 },
 {
 automatic = 1;
-code = "sub dieresiscomb by dieresiscomb.case;\012sub gravecomb by gravecomb.case;\012sub acutecomb by acutecomb.case;\012sub circumflexcomb by circumflexcomb.case;\012sub caroncomb by caroncomb.case;\012sub ringcomb by ringcomb.case;\012sub macroncomb by macroncomb.case;\012";
+code = "sub dieresiscomb by dieresiscomb.case;\012sub dotaccentcomb by dotaccentcomb.case;\012sub gravecomb by gravecomb.case;\012sub acutecomb by acutecomb.case;\012sub circumflexcomb by circumflexcomb.case;\012sub caroncomb by caroncomb.case;\012sub ringcomb by ringcomb.case;\012sub tildecomb by tildecomb.case;\012sub macroncomb by macroncomb.case;\012";
 name = case;
 },
 {
@@ -42,12 +52,12 @@ name = dlig;
 },
 {
 automatic = 1;
-code = "sub g by g.ss01;\012sub i by i.ss01;\012sub idotless by idotless.ss01;\012sub iacute by iacute.ss01;\012sub icircumflex by icircumflex.ss01;\012sub idieresis by idieresis.ss01;\012sub igrave by igrave.ss01;\012sub iogonek by iogonek.ss01;\012sub j by j.ss01;\012sub zdotaccent by zdotaccent.ss01;\012";
+code = "sub g by g.ss01;\012sub i by i.ss01;\012sub idotless by idotless.ss01;\012sub iacute by iacute.ss01;\012sub icircumflex by icircumflex.ss01;\012sub idieresis by idieresis.ss01;\012sub igrave by igrave.ss01;\012sub imacron by imacron.ss01;\012sub iogonek by iogonek.ss01;\012sub j by j.ss01;\012sub zdotaccent by zdotaccent.ss01;\012";
 name = salt;
 },
 {
 automatic = 1;
-code = "sub g by g.ss01;\012sub i by i.ss01;\012sub idotless by idotless.ss01;\012sub iacute by iacute.ss01;\012sub icircumflex by icircumflex.ss01;\012sub idieresis by idieresis.ss01;\012sub igrave by igrave.ss01;\012sub iogonek by iogonek.ss01;\012sub j by j.ss01;\012sub zdotaccent by zdotaccent.ss01;\012";
+code = "sub g by g.ss01;\012sub i by i.ss01;\012sub idotless by idotless.ss01;\012sub iacute by iacute.ss01;\012sub icircumflex by icircumflex.ss01;\012sub idieresis by idieresis.ss01;\012sub igrave by igrave.ss01;\012sub imacron by imacron.ss01;\012sub iogonek by iogonek.ss01;\012sub j by j.ss01;\012sub zdotaccent by zdotaccent.ss01;\012";
 name = ss01;
 },
 {
@@ -71,7 +81,7 @@ name = calt;
 },
 {
 automatic = 1;
-code = "lookup ccmp_Other_1 {\012	@CombiningTopAccents = [acutecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb macroncomb ringcomb tildecomb];\012	@CombiningNonTopAccents = [ogonekcomb];\012	sub [i]' @CombiningTopAccents by [idotless];\012	sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];\012	@Markscomb = [dieresiscomb gravecomb acutecomb circumflexcomb caroncomb ringcomb macroncomb];\012	@MarkscombCase = [dieresiscomb.case gravecomb.case acutecomb.case circumflexcomb.case caroncomb.case ringcomb.case macroncomb.case];\012	sub @Markscomb @Markscomb' by @MarkscombCase;\012	sub @Uppercase @Markscomb' by @MarkscombCase;\012} ccmp_Other_1;\012\012lookup ccmp_Other_2 {\012	sub @Markscomb' @MarkscombCase by @MarkscombCase;\012	sub @MarkscombCase @Markscomb' by @MarkscombCase;\012} ccmp_Other_2;\012";
+code = "lookup ccmp_Other_1 {\012	@CombiningTopAccents = [acutecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb macroncomb ringcomb tildecomb];\012	@CombiningNonTopAccents = [ogonekcomb];\012	sub [i]' @CombiningTopAccents by [idotless];\012	sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];\012	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb circumflexcomb caroncomb ringcomb tildecomb macroncomb];\012	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case circumflexcomb.case caroncomb.case ringcomb.case tildecomb.case macroncomb.case];\012	sub @Markscomb @Markscomb' by @MarkscombCase;\012	sub @Uppercase @Markscomb' by @MarkscombCase;\012} ccmp_Other_1;\012\012lookup ccmp_Other_2 {\012	sub @Markscomb' @MarkscombCase by @MarkscombCase;\012	sub @MarkscombCase @Markscomb' by @MarkscombCase;\012} ccmp_Other_2;\012";
 name = ccmp;
 },
 {
@@ -375,8 +385,8 @@ rightKerningGroup = A;
 unicode = 00C0;
 },
 {
-glyphname = Aogonek;
-lastChange = "2016-10-16 15:59:44 +0000";
+glyphname = Amacron;
+lastChange = "2016-10-17 14:34:17 +0000";
 layers = (
 {
 components = (
@@ -384,11 +394,50 @@ components = (
 name = A;
 },
 {
-name = ogonekcomb;
-transform = "{1, 0, 0, 1, 41, -6}";
+name = macroncomb.case;
+transform = "{1, 0, 0, 1, 141, 0}";
 }
 );
 layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 764;
+}
+);
+unicode = 0100;
+},
+{
+glyphname = Aogonek;
+lastChange = "2016-10-17 14:23:21 +0000";
+layers = (
+{
+components = (
+{
+name = A;
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+paths = (
+{
+closed = 1;
+nodes = (
+"415 -34 OFFCURVE",
+"356 -87 OFFCURVE",
+"356 -144 CURVE SMOOTH",
+"356 -171 OFFCURVE",
+"370 -198 OFFCURVE",
+"393 -224 CURVE",
+"486 -214 OFFCURVE",
+"578 -180 OFFCURVE",
+"623 -148 CURVE",
+"603 -120 OFFCURVE",
+"591 -93 OFFCURVE",
+"591 -67 CURVE SMOOTH",
+"591 -41 OFFCURVE",
+"603 -12 OFFCURVE",
+"659 -6 CURVE",
+"558 -1 LINE"
+);
+}
+);
 width = 764;
 }
 );
@@ -1739,6 +1788,26 @@ width = 660;
 unicode = 00C8;
 },
 {
+glyphname = Emacron;
+lastChange = "2016-10-17 14:34:18 +0000";
+layers = (
+{
+components = (
+{
+name = E;
+},
+{
+name = macroncomb.case;
+transform = "{1, 0, 0, 1, 150, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 660;
+}
+);
+unicode = 0112;
+},
+{
 glyphname = Eogonek;
 lastChange = "2016-09-03 00:45:05 +0000";
 layers = (
@@ -2595,6 +2664,26 @@ width = 412;
 unicode = 00CF;
 },
 {
+glyphname = Imacron;
+lastChange = "2016-10-17 14:34:22 +0000";
+layers = (
+{
+components = (
+{
+name = I;
+},
+{
+name = macroncomb.case;
+transform = "{1, 0, 0, 1, 6, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 412;
+}
+);
+unicode = 012A;
+},
+{
 glyphname = Iogonek;
 lastChange = "2016-10-16 23:05:34 +0000";
 layers = (
@@ -3434,6 +3523,26 @@ width = 826;
 leftKerningGroup = O;
 rightKerningGroup = O;
 unicode = 00D2;
+},
+{
+glyphname = Omacron;
+lastChange = "2016-10-17 14:34:26 +0000";
+layers = (
+{
+components = (
+{
+name = O;
+},
+{
+name = macroncomb.case;
+transform = "{1, 0, 0, 1, 204, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 826;
+}
+);
+unicode = 014C;
 },
 {
 glyphname = Otilde;
@@ -4790,6 +4899,26 @@ width = 781;
 unicode = 0172;
 },
 {
+glyphname = Uring;
+lastChange = "2016-10-17 14:32:17 +0000";
+layers = (
+{
+components = (
+{
+name = U;
+},
+{
+name = ringcomb.case;
+transform = "{1, 0, 0, 1, 254, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 781;
+}
+);
+unicode = 016E;
+},
+{
 glyphname = V;
 lastChange = "2016-10-16 16:18:24 +0000";
 layers = (
@@ -5557,6 +5686,26 @@ width = 690;
 }
 );
 unicode = 017B;
+},
+{
+glyphname = Mdotaccent.alt;
+lastChange = "2016-10-17 14:30:05 +0000";
+layers = (
+{
+components = (
+{
+name = M;
+},
+{
+alignment = -1;
+name = dotaccentcomb.case;
+transform = "{1, 0, 0, 1, 268, -120}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 923;
+}
+);
 },
 {
 glyphname = a;
@@ -6658,6 +6807,26 @@ width = 718;
 leftKerningGroup = a;
 rightKerningGroup = a;
 unicode = 00E0;
+},
+{
+glyphname = amacron;
+lastChange = "2016-10-17 14:34:03 +0000";
+layers = (
+{
+components = (
+{
+name = a;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 158, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 718;
+}
+);
+unicode = 0101;
 },
 {
 glyphname = aogonek;
@@ -8185,6 +8354,26 @@ leftKerningGroup = o;
 leftMetricsKey = e;
 rightMetricsKey = e;
 unicode = 00E8;
+},
+{
+glyphname = emacron;
+lastChange = "2016-10-17 14:34:02 +0000";
+layers = (
+{
+components = (
+{
+name = e;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 136, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 643;
+}
+);
+unicode = 0113;
 },
 {
 glyphname = eogonek;
@@ -11220,6 +11409,26 @@ width = 377;
 unicode = 00EC;
 },
 {
+glyphname = imacron;
+lastChange = "2016-10-17 14:34:07 +0000";
+layers = (
+{
+components = (
+{
+name = idotless;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, -11, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 377;
+}
+);
+unicode = 012B;
+},
+{
 glyphname = iogonek;
 lastChange = "2016-10-16 23:06:32 +0000";
 layers = (
@@ -12430,6 +12639,26 @@ width = 718;
 leftKerningGroup = o;
 rightKerningGroup = o;
 unicode = 00F2;
+},
+{
+glyphname = omacron;
+lastChange = "2016-10-17 14:34:14 +0000";
+layers = (
+{
+components = (
+{
+name = o;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 147, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 718;
+}
+);
+unicode = 014D;
 },
 {
 glyphname = otilde;
@@ -13932,6 +14161,7 @@ unicode = 00F9;
 },
 {
 glyphname = umacron;
+lastChange = "2016-10-17 14:34:03 +0000";
 layers = (
 {
 components = (
@@ -13940,10 +14170,11 @@ name = u;
 },
 {
 name = macroncomb;
+transform = "{1, 0, 0, 1, 184, 0}";
 }
 );
 layerId = "15808E89-C4EA-4701-A327-0721774450FF";
-width = 600;
+width = 768;
 }
 );
 unicode = 016B;
@@ -13967,6 +14198,26 @@ width = 768;
 }
 );
 unicode = 0173;
+},
+{
+glyphname = uring;
+lastChange = "2016-10-17 14:32:17 +0000";
+layers = (
+{
+components = (
+{
+name = u;
+},
+{
+name = ringcomb;
+transform = "{1, 0, 0, 1, 197, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 768;
+}
+);
+unicode = 016F;
 },
 {
 glyphname = v;
@@ -15502,6 +15753,23 @@ name = idotless.ss01;
 {
 name = gravecomb;
 transform = "{1, 0, 0, 1, -185, 0}";
+}
+);
+layerId = "15808E89-C4EA-4701-A327-0721774450FF";
+width = 398;
+}
+);
+},
+{
+glyphname = imacron.ss01;
+layers = (
+{
+components = (
+{
+name = idotless.ss01;
+},
+{
+name = macroncomb;
 }
 );
 layerId = "15808E89-C4EA-4701-A327-0721774450FF";
@@ -25975,9 +26243,19 @@ unicode = 0303;
 },
 {
 glyphname = macroncomb;
-lastChange = "2016-10-13 22:40:03 +0000";
+lastChange = "2016-10-17 14:34:02 +0000";
 layers = (
 {
+anchors = (
+{
+name = _top;
+position = "{200, 600}";
+},
+{
+name = top;
+position = "{200, 770}";
+}
+);
 layerId = "15808E89-C4EA-4701-A327-0721774450FF";
 paths = (
 {
@@ -26071,7 +26349,7 @@ width = 600;
 },
 {
 glyphname = dotaccentcomb.case;
-lastChange = "2016-10-16 23:24:39 +0000";
+lastChange = "2016-10-17 14:29:51 +0000";
 layers = (
 {
 anchors = (
